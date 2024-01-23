@@ -1,11 +1,12 @@
 {
   imports = [
+    ./buffer.nix
     ./lsp.nix
     ./neo-tree.nix
+    ./statusline.nix
     ./telescope.nix
   ];
   plugins = {
-    bufferline.enable = true;
     emmet.enable = true;
     gitsigns.enable = true;
     luasnip.enable = true;

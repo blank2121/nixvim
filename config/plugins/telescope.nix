@@ -9,7 +9,8 @@
 
       keymaps = {
         "<leader>fg" = "live_grep";
-        "<leader>fd" = "fd";
+	"<leader>fd" = "fd";
+        "<leader>fb" = "buffers";
         "gd" = "lsp_definitions";
         "<leader>uc" = "colorscheme";
       };

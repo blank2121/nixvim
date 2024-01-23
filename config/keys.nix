@@ -1,9 +1,13 @@
 { config, lib, pkgs, ... }:
-
 {
-  plugins = {
-    which-key = {
-      registrations = config.plugins.telescope.keymaps // { };
-    };
-  };
+ keymaps = [
+ 	{
+	key = "L";
+	action = "<cmd>BufferLineCycleNext<CR>";
+	}
+	{
+	key = "H";
+	action = "<cmd>BufferLineCyclePrev<CR>";
+	}
+ ];
 }
