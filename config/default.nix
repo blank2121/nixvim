@@ -1,0 +1,21 @@
+{
+  # Import all your configuration modules here
+  imports = [
+    ./bufferline.nix
+    ./plugins/plugins.nix
+
+    # basic conf
+    #./keys.nix
+    ./options.nix
+    ./globals.nix
+  ];
+
+  colorschemes.gruvbox.enable = true;
+
+  clipboard.providers.wl-copy.enable = true;
+
+  extraConfigLua = ''
+    vim.g.mapleader = " "
+    vim.g.maplocalleader = " "
+  '';
+}
