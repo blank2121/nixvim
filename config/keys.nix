@@ -9,5 +9,9 @@
 	key = "H";
 	action = "<cmd>BufferLineCyclePrev<CR>";
 	}
+	{
+	key = "k";
+	action = "gk";
+	}
  ];
 }

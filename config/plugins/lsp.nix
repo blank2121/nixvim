@@ -2,7 +2,22 @@
   plugins.lsp = {
     enable = true;
     servers = {
+      astro.enable = true;
+      cssls.enable = true;
+      hls.enable = true;
+      jsonls.enable = true;
+      lua-ls.enable = true;
+      marksman.enable = true;
+      pyright.enable = true;
+      rnix-lsp.enable = true;
+
       rust-analyzer.enable = true;
+      rust-analyzer.installCargo = true;
+      rust-analyzer.installRustc = true;
+
+      svelte.enable = true;
+      tailwindcss.enable = true;
+      tsserver.enable = true;
     };
   };
 

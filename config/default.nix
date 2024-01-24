@@ -1,11 +1,10 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./bufferline.nix
     ./plugins/plugins.nix
 
     # basic conf
-    #./keys.nix
+    ./keys.nix
     ./options.nix
     ./globals.nix
   ];
