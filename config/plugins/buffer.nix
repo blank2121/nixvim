@@ -15,7 +15,7 @@
       action = "<cmd>BufferLineCloseRight<CR>";
     }
   ];
-  reg = lib.foldl'
+  plugins.which-key.registrations = lib.foldl'
     (kv: acc: acc // {
       kv.key = kv.action;
     })

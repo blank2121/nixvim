@@ -9,7 +9,7 @@
     ./globals.nix
   ];
 
-  colorschemes.gruvbox.enable = true;
+  colorschemes.tokyonight.enable = true;
 
   clipboard.providers.wl-copy.enable = true;
 

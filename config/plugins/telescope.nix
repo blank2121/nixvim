@@ -15,7 +15,7 @@
     };
   };
 
-  reg = config.plugins.telescope.keymaps // {
+  plugins.which-key.registrations = config.plugins.telescope.keymaps // {
     "<leader>f" = "file+";
     "<leader>u" = "ui+";
   };
