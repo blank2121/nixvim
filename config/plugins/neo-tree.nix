@@ -6,4 +6,7 @@
       action = "<cmd>Neotree toggle<CR>";
     }
   ];
+  plugins.which-key.registrations = {
+	"<leader>e" = "Neotree toggle";
+  };
 }

@@ -1,6 +1,7 @@
 {
   imports = [
     ./buffer.nix
+    ./lspsaga.nix
     ./lsp.nix
     ./neo-tree.nix
     ./statusline.nix

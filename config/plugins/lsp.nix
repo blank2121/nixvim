@@ -53,9 +53,5 @@
     };
   };
 
-  plugins.lspsaga = {
-    enable = true;
-  };
-
   plugins.lspkind.enable = true;
 }
