@@ -23,6 +23,7 @@
   extraPlugins =
     [
       pkgs.vimPlugins.rose-pine
+      pkgs.vimPlugins.srcery-vim
     ];
 
   colorscheme = "rose-pine";
