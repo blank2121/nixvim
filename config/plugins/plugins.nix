@@ -10,7 +10,6 @@
   plugins = {
     emmet.enable = true;
     gitsigns.enable = true;
-    luasnip.enable = true;
     noice.enable = true;
     notify.enable = true;
     treesitter.enable = true;
