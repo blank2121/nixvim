@@ -26,7 +26,7 @@
   plugins.luasnip.enable = true;
   plugins.cmp-nvim-lsp.enable = true;
 
-  plugins.cmp = {
+  plugins.nvim-cmp = {
     enable = true;
     autoEnableSources = true;
     sources = [
