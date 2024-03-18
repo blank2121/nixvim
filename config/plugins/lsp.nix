@@ -6,6 +6,7 @@
       cssls.enable = true;
       hls.enable = true;
       jsonls.enable = true;
+      ltex.enable = true;
       lua-ls.enable = true;
       marksman.enable = true;
       pyright.enable = true;
@@ -17,12 +18,13 @@
 
       svelte.enable = true;
       tailwindcss.enable = true;
+      texlab.enable = true;
       tsserver.enable = true;
     };
   };
 
   plugins.lspkind.enable = true;
-
+  plugins.cmp-latex-symbols.enable = true;
   plugins.luasnip.enable = true;
   plugins.cmp-nvim-lsp.enable = true;
 

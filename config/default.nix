@@ -24,7 +24,12 @@
     [
       pkgs.vimPlugins.rose-pine
       pkgs.vimPlugins.srcery-vim
+      pkgs.vimPlugins.gruvbox
+      pkgs.vimPlugins.tokyonight-nvim
+      pkgs.vimPlugins.oceanic-material
+      pkgs.vimPlugins.catppuccin-nvim
+      pkgs.vimPlugins.awesome-vim-colorschemes
     ];
 
-  colorscheme = "rose-pine";
+  colorscheme = "dogrun";
 }
