@@ -15,6 +15,7 @@
     noice.enable = true;
     notify.enable = true;
     nvim-autopairs.enable = true;
+    transparent.enable = true;
     treesitter.enable = true;
     which-key.enable = true;
   };
