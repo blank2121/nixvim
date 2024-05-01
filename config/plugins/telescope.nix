@@ -12,6 +12,15 @@
         "gd" = "lsp_definitions";
         "<leader>uc" = "colorscheme";
       };
+
+      settings = {
+        pickers = {
+	  colorscheme = {
+	    enable_preview = true;
+	  };
+	};
+      };
+
     };
   };
 
