@@ -4,14 +4,16 @@
     servers = {
       astro.enable = true;
       cssls.enable = true;
+      emmet-ls.enable= true;
       hls.enable = true;
+      html.enable = true;
       jsonls.enable = true;
       julials.enable = true;
       ltex.enable = true;
       lua-ls.enable = true;
       marksman.enable = true;
+      nil-ls.enable = true;
       pyright.enable = true;
-      rnix-lsp.enable = true;
 
       rust-analyzer.enable = true;
       rust-analyzer.installCargo = true;

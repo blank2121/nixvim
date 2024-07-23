@@ -31,5 +31,5 @@
       pkgs.vimPlugins.awesome-vim-colorschemes
     ];
 
-  colorscheme = "dogrun";
+  colorscheme = "alduin";
 }

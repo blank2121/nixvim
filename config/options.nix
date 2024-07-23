@@ -5,7 +5,7 @@
     relativenumber = true;
     number = true;
 
-    tabstop = 4;
+    tabstop = 2;
     shiftwidth = 4;
     expandtab = true;
     autoindent = true;
