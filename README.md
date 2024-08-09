@@ -1,4 +1,8 @@
-<img width="400" heigh="400" src="./assets/nixvim_ico.png"/>
+<h2 align="center">
+  <picture>
+    <img src="./assets/nixvim_icon.svg" width="25%" />
+  </picture>
+</h2>
 
 > <p style="text-align: center;">my (not so) elegant nixvim configuration</p>
 
