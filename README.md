@@ -1,17 +1,11 @@
-# Nixvim template
+<img src="./assets/nixvim_ico.png"/>
 
-This template gives you a good starting point for configuring nixvim standalone.
+> <p style="text-align: center;">my (not so) elegant nixvim configuration</p>
 
-## Configuring
+---
 
-To start configuring, just add or modify the nix files in `./config`.
-If you add a new configuration file, remember to add it to the
-[`config/default.nix`](./config/default.nix) file
+<h3 style="text-align: center;">Sneak Peak</h3>
 
-## Testing your new configuration
-
-To test your configuration simply run the following command
-
-```
-nix run .
-```
+<img src="./assets/main1.png"/>
+<img src="./assets/main2.png"/>
+<img src="./assets/main3.png"/>
