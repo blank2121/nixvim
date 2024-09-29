@@ -12,20 +12,20 @@
 
   clipboard.providers.wl-copy.enable = true;
 
-  extraPlugins =
-    [
-      pkgs.vimPlugins.rose-pine
-      pkgs.vimPlugins.srcery-vim
-      pkgs.vimPlugins.nightfox-nvim
-      pkgs.vimPlugins.gruvbox
-      pkgs.vimPlugins.tokyonight-nvim
-      pkgs.vimPlugins.oceanic-material
-      pkgs.vimPlugins.catppuccin-nvim
-      pkgs.vimPlugins.awesome-vim-colorschemes
+  extraPlugins = with pkgs.vimPlugins; [
+      rose-pine
+      srcery-vim
+      nightfox-nvim
+      gruvbox
+      tokyonight-nvim
+      oceanic-material
+      catppuccin-nvim
+      awesome-vim-colorschemes
+      zellij-nav-nvim
     ];
 
   colorschemes.base16.enable= true;
-  colorscheme = "base16-rose-pine";
+  colorscheme = "alduin";
   # colorschemes.base16.colorscheme = {
   #   base00 = "#3a2c28";
   #   base01 = "#564940";
