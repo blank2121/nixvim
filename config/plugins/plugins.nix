@@ -9,6 +9,7 @@
     ./virt-column.nix
   ];
   plugins = {
+    obsidian.enable = true;
     crates-nvim.enable = true;
     emmet.enable = true;
     gitsigns.enable = true;
