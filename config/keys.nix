@@ -11,23 +11,6 @@
 	action = "<cmd>BufferLineCyclePrev<CR>";
 	}
 
-	#moving around windows
-	{
-	key = "<C-h>";
-	action = "<C-w>h";
-	}
-	{
-	key = "<C-j>";
-	action = "<C-w>j";
-	}
-	{
-	key = "<C-k>";
-	action = "<C-w>k";
-	}
-	{
-	key = "<C-l>";
-	action = "<C-w>l";
-	}
 	#splits
 	{
 	key = "<leader>-";

@@ -21,7 +21,6 @@
       oceanic-material
       catppuccin-nvim
       awesome-vim-colorschemes
-      zellij-nav-nvim
     ];
 
   colorschemes.base16.enable= true;
