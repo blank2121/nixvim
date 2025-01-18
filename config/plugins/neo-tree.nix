@@ -7,6 +7,6 @@
     }
   ];
   plugins.which-key.registrations = {
-	"<leader>e" = "Neotree toggle";
+    "<leader>e" = "Neotree toggle";
   };
 }

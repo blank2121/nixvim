@@ -4,26 +4,33 @@
     servers = {
       astro.enable = true;
       cssls.enable = true;
-      emmet-ls.enable= true;
+      emmet_ls.enable = true;
+
       hls.enable = true;
+      hls.installGhc = true;
+
       html.enable = true;
       jsonls.enable = true;
+
       julials.enable = true;
+      julials.package = null;
+
       ltex.enable = true;
-      lua-ls.enable = true;
+      lua_ls.enable = true;
       marksman.enable = true;
-      nil-ls.enable = true;
+      nixd.enable = true;
       pyright.enable = true;
 
-      rust-analyzer.enable = true;
-      rust-analyzer.installCargo = true;
-      rust-analyzer.installRustc = true;
+      rust_analyzer.enable = true;
+      rust_analyzer.installCargo = true;
+      rust_analyzer.installRustc = true;
 
       svelte.enable = true;
       tailwindcss.enable = true;
       taplo.enable = true;
       texlab.enable = true;
-      tsserver.enable = true;
+
+      ts_ls.enable = true;
     };
   };
 
@@ -47,17 +54,17 @@
         "<C-d>" = "cmp.mapping.scroll_docs(-4)";
         "<C-e>" = "cmp.mapping.close()";
         "<C-f>" = "cmp.mapping.scroll_docs(4)";
-        "<CR>" = "cmp.mapping.confirm({ select = true })"; 
-	"<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-  	"<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+        "<CR>" = "cmp.mapping.confirm({ select = true })";
+        "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+        "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
       };
 
       snippet.expand = ''
-	function(args)
-	  require("luasnip").lsp_expand(args.body)
-	end
+        function(args)
+          require("luasnip").lsp_expand(args.body)
+        end
       '';
 
-    }; 
+    };
   };
 }

@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   plugins = {
@@ -15,10 +20,10 @@
 
       settings = {
         pickers = {
-	  colorscheme = {
-	    enable_preview = true;
-	  };
-	};
+          colorscheme = {
+            enable_preview = true;
+          };
+        };
       };
 
     };
@@ -29,4 +34,3 @@
     "<leader>u" = "ui+";
   };
 }
-

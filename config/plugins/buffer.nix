@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 {
   plugins.bufferline.enable = true;
   keymaps = [
@@ -16,6 +21,6 @@
     }
   ];
   plugins.which-key.registrations = {
-	"<leader>b" = "buffer+";
+    "<leader>b" = "buffer+";
   };
 }

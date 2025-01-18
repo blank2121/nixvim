@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 {
   plugins.lspsaga = {
     enable = true;
@@ -26,12 +31,12 @@
       action = "<cmd>Lspsaga rename<CR>";
     }
     {
-    	key = "[d";
-	action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
+      key = "[d";
+      action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
     }
     {
-    	key = "]d";
-	action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
+      key = "]d";
+      action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
     }
   ];
 
