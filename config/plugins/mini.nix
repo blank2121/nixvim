@@ -35,12 +35,12 @@
             signature = {
                 height = 25;
                 width = 80;
-                border = 'none';
+                border = "none";
             };
         };
 
         lsp_completion = {
-            source_func = "hompletefunc";
+            source_func = "completefunc";
             auto_setup = true;
             process_items = null; # TODO: look up video for this
         };
@@ -91,94 +91,101 @@
       # basicss = {}; # maybe
       bracketed = {
         buffer = {
-            suffix = 'b';
+            suffix = "b";
             options = {};
         };
         comment = {
-            suffix = 'c';
+            suffix = "c";
             options = {};
         };
         conflict = {
-            suffix = 'x';
+            suffix = "x";
             options = {};
         };
         diagnostic = {
-            suffix = 'd';
+            suffix = "d";
             options = {};
         };
         file = {
-            suffix = 'f';
+            suffix = "f";
             options = {};
         };
         indent = {
-            suffix = 'i';
+            suffix = "i";
             options = {};
         };
         jump = {
-            suffix = 'j';
+            suffix = "j";
             options = {};
         };
         location = {
-            suffix = 'l';
+            suffix = "l";
             options = {};
         };
         oldfile = {
-            suffix = 'o';
+            suffix = "o";
             options = {};
         };
         quickfix = {
-            suffix = 'q';
+            suffix = "q";
             options = {};
         };
         treesitter = {
-            suffix = 't';
+            suffix = "t";
             options = {};
         };
         undo = {
-            suffix = 'u';
+            suffix = "u";
             options = {};
         };
         window = {
-            suffix = 'w';
+            suffix = "w";
             options = {};
         };
         yank = {
-            suffix = 'y';
+            suffix = "y";
             options = {};
         };
       };
       clue = {
-        triggers = {
+        triggers = [
             # Leader triggers
-            { mode = "n"; keys = "<Leader>" };
-            { mode = "x"; keys = "<Leader>" };
+            { mode = "n"; keys = "<leader>"; }
+            { mode = "x"; keys = "<leader>"; }
 
             #Built-in completion
-            { mode = "i"; keys = "<C-x>" };
+            { mode = "i"; keys = "<C-x>"; }
 
             # `g` key
-            { mode = "n"; keys = "g" };
-            { mode = "x"; keys = "g" };
+            { mode = "n"; keys = "g"; }
+            { mode = "x"; keys = "g"; }
+
+            # `s` key
+            { mode = "n"; keys = "s"; }
+
+            # Navigation
+            { mode = "n"; keys = "["; }
+            { mode = "n"; keys = "]"; }
 
             # Marks
-            { mode = "n"; keys = "'" };
-            { mode = "n"; keys = "`" };
-            { mode = "x"; keys = "'" };
-            { mode = "x"; keys = "`" };
+            { mode = "n"; keys = "'"; }
+            { mode = "n"; keys = "`"; }
+            { mode = "x"; keys = "'"; }
+            { mode = "x"; keys = "`"; }
 
             # Registers
-            { mode = "n"; keys = """ };
-            { mode = "x"; keys = """ };
-            { mode = "i"; keys = "<C-r>" };
-            { mode = "c"; keys = "<C-r>" };
+            { mode = "n"; keys = "\""; }
+            { mode = "x"; keys = "\""; }
+            { mode = "i"; keys = "<C-r>"; }
+            { mode = "c"; keys = "<C-r>"; }
 
             # Window commands
-            { mode = "n"; keys = "<C-w>" };
+            { mode = "n"; keys = "<C-w>"; }
 
             # `z` key
-            { mode = "n"; keys = "z" };
-            { mode = "x"; keys = "z" };
-        };
+            { mode = "n"; keys = "z"; }
+            { mode = "x"; keys = "z"; }
+        ];
         # also use clues = {}; in docs but idk how in nix
       };
       # extra = {}; # maybe
