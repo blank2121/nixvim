@@ -14,4 +14,8 @@
     twilight.enable = true;
     vim-css-color.enable = true;
   };
+
+  plugins.oil = {
+    enable = true;
+  };
 }
