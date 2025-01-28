@@ -22,15 +22,26 @@
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
+
           nixvimModule = {
             inherit pkgs;
-            module = import ./config; # import the module directly
+            module = import ./code; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
               # inherit (inputs) foo;
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
+
+          writerModule = {
+            inherit pkgs;
+            module = import ./writer; # import the module directly
+            # You can use `extraSpecialArgs` to pass additional arguments to your module files
+            extraSpecialArgs = {
+              # inherit (inputs) foo;
+            };
+          };
+          writer = nixvim'.makeNixvimWithModule writerModule;
         in
         {
           checks = {
@@ -41,6 +52,8 @@
           packages = {
             # Lets you run `nix run .` to start nixvim
             default = nvim;
+            code = nvim;
+            writer = writer;
           };
         };
     };
