@@ -16,21 +16,51 @@
 <img src="./assets/main2.png"/>
 <img src="./assets/main3.png"/>
 
+
 ---
 
 ## Installation
 If you would like to use this, there are three ways to do so. Hopefully it 
-was clear as this is **Nix**Vim and not Vim or NeoVim, but you will need nix installed.
+was clear as this is **Nix**Vim and not Vim or NeoVim, so you will need nix installed.
 
-#### **Method 1: Running it**
-You could not install it and just run it and to use the configuration, you won't need to clone the repository. All you need to do is run `nix run github:blank2121/nixvim# -- <file>`
+Final thing to say is there is a code version and a writing version which are nearly identical 
+besides the color schemes and that the writer has fewer plugins as it doesn't need LSPs for code. 
+To choose one or both, just use the same patters that is shown but where ever there is `#code` or 
+`.code`, replace that with `#writer` or `.writer` respectively.
 
-<br/>
+#### **Method 1: Add to NixOS flake (Recommended method)**
+Just add it to your NixOS `flake.nix` file:
 
-Additionally, if you want to clone this repository and edit and run it there then run in the folder `nix run .# -- <file>`
+```nix
+{
+    inputs = {
+        nixvim.url = "github:blank2121/nixvim";
+        ...
+    };
+}
+```
 
-#### **Method 2: Adding it to Profile**
-To install it to your profile simply run `nix profile install github:blank2121/nixvim`
+After, to install it as a package that can be used, add it to your `environment.systemPackages`
+
+```nix
+{ inputs, pkgs, ... }:
+
+{
+  environment.systemPackages = [
+    inputs.nixvim.packages."${pkgs.system}".code
+    ...
+  ];
+  ...
+}
+```
+
+Note that if you are having `environment.systemPackages` in the `flake.nix` file, then do not do use `"${pkgs.system}"` but `"${system}"`
+
+#### **Method 2: Running it**
+You could not install it and just run it and to use the configuration, you won't need to clone the repository. All you need to do is run `nix run github:blank2121/nixvim#code -- <file>`
+
+#### **Method 3: Adding it to Profile (NOT RECOMMENDED)**
+To install it to your profile simply run `nix profile install github:blank2121/nixvim#code`
 
 <br/>
 
