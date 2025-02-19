@@ -19,6 +19,7 @@
       ltex.enable = true;
       lua_ls.enable = true;
       marksman.enable = true;
+      nim_langserver.enable = true;
       nixd.enable = true;
       pyright.enable = true;
 
