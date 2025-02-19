@@ -35,6 +35,7 @@
     };
   };
 
+  plugins.lsp-format.enable = true;
   plugins.lspkind.enable = true;
   plugins.lspsaga.enable = true;
   plugins.luasnip.enable = true;
