@@ -12,6 +12,8 @@
 
       taplo.enable = true;
       texlab.enable = true;
+
+      tinymist.enable = true;
     };
   };
 
@@ -19,4 +21,5 @@
   plugins.lspsaga.enable = true;
   plugins.luasnip.enable = true;
   plugins.telescope.enable = true;
+  plugins.typst-preview.enable = true;
 }
